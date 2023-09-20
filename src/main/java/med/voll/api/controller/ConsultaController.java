@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/consultas")
 public class ConsultaController {
 
+    //primer cambio en intellij
+
     @Autowired
     private AgendaDeConsultaService service;
 

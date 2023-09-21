@@ -1,5 +1,5 @@
 spring:
-  profile.active: dev
+  profile.active: dev, test, prod
   datasource:
     url: jdbc:mysql://localhost/vollmed_api
     username: root
@@ -28,4 +28,4 @@ api:
 #server.error.include-stacktrace=never
 #
 #api.security.secret=${JWT_SECRET:123456}
-
+##java -DDATASOURCE_URL=jdbc:mysql://localhost/vollmed_api --DDATASOURCE_USERNAME=root --DDATASOURCE_PASSWORD=gosbeligos -jar target/api-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
